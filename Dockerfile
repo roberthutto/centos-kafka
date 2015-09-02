@@ -6,6 +6,8 @@ mv /opt/kafka_2.10-0.8.2.1 /opt/kafka
 COPY docker-entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
+RUN chmod +x /entrypoint.sh
+
 WORKDIR /opt/kafka
 
 #Broker
